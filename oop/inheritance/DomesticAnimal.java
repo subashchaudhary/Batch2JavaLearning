@@ -1,4 +1,4 @@
-package oop;
+package oop.inheritance;
 
 
 //inheritance : using extends keyword
