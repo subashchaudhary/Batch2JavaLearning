@@ -7,6 +7,6 @@ public class Main {
 
 
 
-        Computer computer = new DesktopComputer();
+        Computer computer = new MyWorkingComputer();
     }
 }
