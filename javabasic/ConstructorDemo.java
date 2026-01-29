@@ -25,6 +25,10 @@ public class ConstructorDemo {
 
 class Student {
 
+    private int rollNo;
+    private String name;
+    private String address;
+    private String phone;
 
     //constructor: default constructor
     public Student(){
@@ -44,10 +48,7 @@ class Student {
         this.phone = phone;
     }
 
-    private int rollNo;
-    private String name;
-    private String address;
-    private String phone;
+
 
 
     @Override
