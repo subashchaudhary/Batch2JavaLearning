@@ -1,0 +1,16 @@
+1. Core Manipulation Methods
+These methods allow you to add, update, or remove elements.
+add(E element): Appends the specified element to the end of the list.
+add(int index, E element): Inserts an element at a specific position, shifting existing elements to the right.
+set(int index, E element): Replaces the element at a specific position with a new one; returns the old element.
+remove(int index): Removes the element at the given index and shifts remaining items left.
+remove(Object o): Removes the first occurrence of a specific object from the list.
+clear(): Removes all elements, making the list empty.
+2. Access & Search Methods
+Methods like get(int index) retrieve an element at a specific index. indexOf(Object o) and lastIndexOf(Object o) find the first and last occurrences of an element, respectively. contains(Object o) checks for element existence, size() returns the element count, and isEmpty() checks if the list has no elements.
+3. Bulk & Collection Operations
+These methods handle multiple elements or collections. Examples include addAll(Collection c) to add elements from another collection, removeAll(Collection c) to remove elements present in another collection, and toArray() to convert the list to an array.
+4. ArrayList Specific Methods (Capacity Management)
+Specific to ArrayList are methods for managing its internal array. ensureCapacity(int min) guarantees a minimum internal capacity, while trimToSize() reduces capacity to the current size. clone() creates a shallow copy.
+5. Modern Additions (Java 21+)
+Newer methods allow easier access to the beginning and end of the list, such as addFirst(E e), addLast(E e), getFirst(), getLast(), removeFirst(), and removeLast().
