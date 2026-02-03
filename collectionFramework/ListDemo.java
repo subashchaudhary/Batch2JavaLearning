@@ -1,9 +1,6 @@
 package collectionFramework;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ListDemo {
 
@@ -66,28 +63,48 @@ public class ListDemo {
 
         arrayList.add("Java");
 
-        System.out.println(arrayList.get(0)); //get element at index 0
-        System.out.println(arrayList.size()); //size of the arrarylist
+      //  System.out.println(arrayList.get(0)); //get element at index 0
+      //  System.out.println(arrayList.size()); //size of the arrarylist
 
 
         ArrayList arrayList1 = new ArrayList();
         arrayList1.add(22);
         arrayList1.add(55);
         arrayList.addAll(arrayList1);
-        System.out.println(arrayList.size()); //size after adding all elements from arraylist1
+      //  System.out.println(arrayList.size()); //size after adding all elements from arraylist1
 
        // arrayList.(arrayList1);
 
       //  arrayList.clear();
-        System.out.println(arrayList.size());
+       // System.out.println(arrayList.size());
 
         boolean empty = arrayList.isEmpty();
 
-        System.out.println(empty);
+//        System.out.println(empty);
 
         arrayList.remove("Java");
+        System.out.println("using for loop");
+        //for loop
+        for(int i=0; i< arrayList.size(); i++) {
 
-        arrayList.
+           System.out.println(arrayList.get(i).toString());
+        }
+
+        System.out.println("using enhanced for loop");
+        //enhanced for loop
+        for(Object ob: arrayList){
+            System.out.println(ob);
+        }
+
+
+        Iterator iterator =  arrayList.iterator(); //
+        System.out.println("using Iterator");
+
+         while(iterator.hasNext()){
+             System.out.println(iterator.next());
+         }
+
+
         System.out.println("program terminated");
 
 
