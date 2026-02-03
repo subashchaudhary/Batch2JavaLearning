@@ -1,0 +1,39 @@
+
+
+// git command
+
+git clone <url>          # Clone a repository from a URL
+
+example: git clone https://github.com/subashchaudhary/Batch2JavaLearning.git
+
+git add <file>        # Stage changes for a specific file
+git add .             # Stage all changes in the current directory
+
+git commit -m "message"  # Commit staged changes with a message
+
+git push origin <branch>  # Push committed changes to a remote branch
+
+git pull origin <branch>  # Pull changes from a remote branch to local
+
+git status              # Check the status of the working directory and staging area
+
+git log                 # View the commit history
+
+
+-- Starting a new repository --
+
+desktop> mkdir javaproject   # Create a new directory for the repository
+
+desktop> cd bankApplication      # Change into the new directory
+
+
+git init               # Initialize a new Git repository
+
+git remote add origin <url>   # Add a remote repository URL
+example : git remote add origin https://github.com/subashchaudhary/Batch2JavaLearning.git
+
+git remote -v         # Verify the remote repository URL
+
+git branch -M main    # Rename the default branch to 'main'
+git push -u origin main  # Push the initial commit to the remote repository and set upstream
+
