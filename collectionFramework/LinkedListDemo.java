@@ -21,10 +21,28 @@ public class LinkedListDemo {
         list.add(4);
         list.add(5);
 
-        var iterator =  list.listIterator();
-//        while (iterator.hasNext()){
-//            System.out.println(iterator.next());
-//        }
+        System.out.println("Using for loop to iterate");
+        for(int i=0; i< list.size(); i++) {
+
+           System.out.println(list.get(i).toString());
+        }
+
+        //ehancee for loop
+
+        System.out.println("Using enhanced for loop to iterate");
+        for(Object i : list){
+            System.out.println(i);
+        }
+
+
+        System.out.println("Using iterator to iterate");
+        //using iterator
+        var iterator =  list.iterator();
+
+
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
 
         list.peek();
 
