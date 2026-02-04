@@ -2,7 +2,7 @@ package collectionFramework;
 
 import java.util.*;
 
-public class ListDemo {
+public class ArraryList {
 
 
     static void main() {
@@ -89,6 +89,7 @@ public class ListDemo {
 
            System.out.println(arrayList.get(i).toString());
         }
+
 
         System.out.println("using enhanced for loop");
         //enhanced for loop
