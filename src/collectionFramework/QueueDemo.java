@@ -32,7 +32,7 @@ public class QueueDemo {
         }
 
         //QUEUE
-        Queue<Integer> queue = new PriorityQueue<>();
+        Queue<Integer> queue = new PriorityQueue<>(); //concrete class of queue interface
         queue.add(10);
         queue.add(20);
         queue.add(50);
@@ -59,5 +59,7 @@ public class QueueDemo {
         for(Integer n : queue){
             System.out.print(" "+ n);
         }
+
+
     }
 }
